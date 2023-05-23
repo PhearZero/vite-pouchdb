@@ -1,7 +1,7 @@
 import expressPouch from 'express-pouchdb'
 import fs from 'fs'
 import path from 'path'
-
+const __dirname = process.cwd()
 /**
  * @typedef {Object} ExpressConfiguration Optional. These options are supported:
  * @property {string} [configPath='./config.json'] a path to the configuration file to use. Defaults to './config.json'.
