@@ -1,0 +1,110 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <link rel="icon" type="image/svg+xml" href="/vite.svg" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@picocss/pico@1/css/pico.min.css">
+    <title>Vite App</title>
+    <style>
+      a {
+        font-weight: 500;
+        color: #646cff;
+        text-decoration: inherit;
+      }
+
+      a:hover {
+        color: #535bf2;
+      }
+      .button-row {
+        display: flex;
+        flex-direction: row;
+        margin-right: auto;
+        margin-left: auto;
+        max-width: 500px;
+      }
+      body>footer {
+        padding: 1rem 0;
+      }
+      body {
+        display: flex;
+        flex-direction: column;
+        min-height: 100vh;
+      }
+      .flex-row {
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+        justify-content: center;
+      }
+      #app {
+        height: 100%;
+        display: flex;
+        flex-direction: column;
+        padding: 0;
+        flex: 1;
+        text-align: center;
+        justify-content: center;
+      }
+      .unstyled {
+        all: unset;
+      }
+      .spaced {
+        padding: var(--spacing);
+      }
+      .no-padding {
+        padding: 0;
+      }
+      .no-margin {
+        margin: 0;
+      }
+      .compact {
+        margin:0;
+        padding: 0;
+      }
+
+      .left {
+        text-align: left;
+      }
+      .logo {
+        height: 6em;
+        padding: 1.5em;
+        will-change: filter;
+        transition: filter 300ms;
+      }
+
+      .logo.vite:hover {
+        filter: drop-shadow(0 0 2em #646cffaa);
+      }
+
+      .logo.vanilla:hover {
+        filter: drop-shadow(0 0 2em #f7df1eaa);
+      }
+
+      .logo.pouch:hover {
+        filter: drop-shadow(0 0 2em #6ccb99);
+      }
+
+      article, hgroup {
+        margin: var(--spacing);
+      }
+    </style>
+  </head>
+  <script>
+    if(typeof global === 'undefined'){
+      var global = global || window;
+    }
+  </script>
+  <body>
+    <main id="app" class="container"></main>
+    <footer>
+      <small
+      >Built with <a href="https://picocss.com" class="secondary">Pico</a> •
+        <a href="https://github.com/picocss/examples/tree/master/v1-sign-in/" class="secondary"
+        >Source code</a
+        ></small
+      >
+    </footer>
+    <script type="module" src="/main.js"></script>
+  </body>
+</html>
